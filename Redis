@@ -1,1 +1,56 @@
 
+
+프로젝트의 주문 기능(https://github.com/f-lab-edu/goodchoice/pull/18/commits/b802375d5f913ffd63ece509ec65e90f3b40ccd5)을 구현하던 중 Race condition이 발생 했고 해결을 하기 위해서 배민 기술블로그의  "선물하기 시스템의 상품 재고는 어떻게 관리되어질까?(https://techblog.woowahan.com/2709/)"를 참고하려했었다.
+Redis의 redission lock을 사용하고 상품 재고(Stock)는 Redis에 Set 자료구조에 구매번호를 저장하여 관리하려하였다.
+
+```
+package com.flab.goodchoice.item.domain;
+
+import lombok.*;
+import org.springframework.data.redis.core.RedisHash;
+import org.springframework.data.redis.core.TimeToLive;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.io.Serializable;
+
+
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+@Builder
+@RedisHash(value = "stock")
+public class Stock implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String itemToken;
+
+    private Long quantity;
+
+    @TimeToLive
+    private long ttl;
+
+    public Stock(String itemToken, Long quantity) {
+        this.itemToken = itemToken;
+        this.quantity = quantity;
+    }
+
+    public void decrease(Long quantity) {
+        if (this.quantity - quantity < 0) {
+            throw new RuntimeException("재고 부족");
+        }
+
+        this.quantity -= quantity;
+    }
+
+    public Long getQuantity() {
+        return quantity;
+    }
+
+}
+```
