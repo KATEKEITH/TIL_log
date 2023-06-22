@@ -62,3 +62,9 @@ public class Stock implements Serializable {
 # 해결
 
 Stock 엔티티(?)의 필드를 업데이트 할게 아니라 S0630000RU(상품번호):5000(상품명):stock:total G0BB0001JQ 와 같이 단순하게 셜계해서 재고 사용량을 업데이트 해야한다.
+
+
+# 참고
+
+- https://platanus.me/post/2163
+- https://techblog.woowahan.com/2709/
