@@ -1,4 +1,9 @@
+## 변경 가능성을 최소화하라
 
+불변 클래스란 간단히 말해 그 인스턴스의 내부 값을 수정할 수 없는 클래스다.
+불변 객체는 단순하다.
+불변 객체는 생성된 시점의 상태를 파괴될 때까지 그대로 간직한다.
+불변 객체는 근본적으로 스레드 안전하여 따로 동기화할 필요가 없다.
 
 ## Immutability를 보장해야하는 경우
 
@@ -23,12 +28,13 @@ public class UserService {
         updateLastUserRequest(user, userRequest);
 
         ... /// 300 라인
-        
+
         send(user, userRequest);
     }
-    
+
 }
 ```
+
 https://mangkyu.tistory.com/131
 
 ## Immutable Object
