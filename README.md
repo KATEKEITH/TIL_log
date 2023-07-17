@@ -1,4 +1,4 @@
-# study_log
+# TIL_log
 
 [테스트](./테스트)
 
