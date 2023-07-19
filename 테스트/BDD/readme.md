@@ -16,7 +16,13 @@ Spring에서 Mockito를 사용하기 위해서는 @ExtendWith(MockitoExtention.c
 
 ## BDDMockito
 
-->
+-> 테스트 대상의 상태의 변화를 테스트
+
+시나리오를 기반으로 테스트하는 패턴을 권장한다.
+
+여기서 권장하는 기본 패턴은 Given, When, Then 구조를 가진다.
+
+이는 테스트 대상이 A 상태에서 출발하며(Given) 어떤 상태 변화를 가했을 때(When) 기대하는 상태로 완료되어야 한다(Then).
 
 BDD 기본 패턴의 given에 해당하는 위치에 이전에 사용한 Mockito의 when() 메서드가 아닌 given() 메서드가 사용됨을 알 수 있다.
 
