@@ -3,10 +3,10 @@
 기술과 지식을 나만의 언어로 정리하는 저장소입니다. 
 
 ```
-today todo
+today
 
-# SpringBootApplication의 run 메소드와 실행과정( https://mangkyu.tistory.com/213 )
-# Java 비동기 
+- SpringBootApplication의 run 메소드와 실행과정( https://mangkyu.tistory.com/213 )
+- Java 비동기 
 
 ```
 
