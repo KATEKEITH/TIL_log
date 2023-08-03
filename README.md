@@ -141,6 +141,7 @@ today
 ## OOP 및 아키텍처
 
 * 책
+ * 객체 지향 프로그래밍 입문
 
 * SOLID
   * [SRP](./OOP&설계/SOLID/SRP.md)
