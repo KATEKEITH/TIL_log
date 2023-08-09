@@ -1,11 +1,27 @@
 # Transaction
 
-## Propagation 정의 및 종류
+...
+
+## Isolation
+
+![image](https://github.com/KATEKEITH/TIL_log/assets/46472768/941f0a38-7739-43a3-ac6d-38b6c67e017e)
+
+
+- SERIALIZABLE
+- REPEATABLE READ
+- READ COMMITTED
+- READ UNCOMMITED
+
+
+<br/>
+<br/>
+
+
+## Propagation
 
 이미 트랜잭션이 진행중일 때 추가 트랜잭션 진행을 어떻게 할지 결정하는 것이다.
 
 전파 속성에 따라 기존의 트랜잭션에 참여할 수도 있고, 별도의 트랜잭션으로 진행할 수도 있고, 에러를 발생시키는 등 여러 선택을 할 수 있다. <br/>
-이렇게 하나의 트랜잭션이 다른 트랜잭션을 만나는 상황을 그림으로 나타내면 다음과 같다.
 
 스프링에는 7가지 전파 속성이 존재하는데, REQUIRED와 REQUIRES_NEW를 바탕으로 어떻게 진행되는지 살펴보도록 하자.
 
