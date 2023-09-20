@@ -77,7 +77,7 @@
 * AWS
 
 * CI/CD
-* 
+
 * NginX
 
 * Pinpoint
