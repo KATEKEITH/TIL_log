@@ -70,6 +70,9 @@
 
 ## 운영체제
 
+ * Synchronous / Asynchronous
+ * Blocking / Non-Blocking
+
 
 <br>
 
