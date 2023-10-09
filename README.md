@@ -212,6 +212,8 @@ https://helloworld92.tistory.com/18
 
 ## OOP 및 아키텍처
 
+확장이 용이하고, 변경이 쉽도록 유연해야 한다.
+
 * 책
   * [객체 지향 프로그래밍 입문](./OOP/%EA%B0%9D%EC%B2%B4%20%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%9E%85%EB%AC%B8)
 
