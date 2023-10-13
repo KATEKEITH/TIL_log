@@ -166,8 +166,6 @@ https://valueelectronic.tistory.com/102
 * 데이터 모델링
 
 * 관계형 데이터베이스
-
-* [h2](./DB/RDB/h2/h2.md)
   
 * SQL
   
@@ -184,6 +182,7 @@ https://valueelectronic.tistory.com/102
   * 책
     * [친절한 SQL 튜닝](./SQL/test)
 
+* [h2](./DB/RDB/h2/h2.md)
 
 * MySQL
 
