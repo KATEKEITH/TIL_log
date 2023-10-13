@@ -171,17 +171,20 @@ https://valueelectronic.tistory.com/102
   
 * SQL
 
-인덱스틑 타는지 확인하는 방법
-https://github.com/gwonsungjun/wiki/blob/master/RDB/MySQL/mysql-explain.md
-
-DB 인덱스를 타지 못하는 경우
-https://helloworld92.tistory.com/18
-
-- OR 조건 일 경우 
-  ```select * from table where name = 'word' or idx = 5```
-
-  OR 조건의 특징은 'A OR B'일 경우 A가 True이면 B를 수행하지 않고 A가 False일 경우 B를 수행한다.
-  name과 idx가 둘다 인덱스가 걸려있는 경우라해도, DBMS가 최적의 OR 조건을 뽑기 힘들어, FULL SCAN 하는 경우가 많다.
+ * 인덱스틑 타는지 확인하는 방법
+  * https://github.com/gwonsungjun/wiki/blob/master/RDB/MySQL/mysql-explain.md
+ 
+ * DB 인덱스를 타지 못하는 경우
+   * https://helloworld92.tistory.com/18
+ 
+ - OR 조건 일 경우 
+   ```select * from table where name = 'word' or idx = 5```
+ 
+   OR 조건의 특징은 'A OR B'일 경우 A가 True이면 B를 수행하지 않고 A가 False일 경우 B를 수행한다.
+   name과 idx가 둘다 인덱스가 걸려있는 경우라해도, DBMS가 최적의 OR 조건을 뽑기 힘들어, FULL SCAN 하는 경우가 많다.
+ 
+ * 책
+   * [친절한 SQL 튜닝](./SQL/test)
 
 
 * MySQL
