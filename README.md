@@ -2,6 +2,50 @@
 
 기술과 지식을 나만의 언어로 정리하는 저장소입니다. 
 
+## 자료 구조
+
+### LinkedHashSet
+
+![image](https://github.com/KATEKEITH/TIL_log/assets/46472768/17a3e266-37ed-490d-9049-8b3fe1819860)
+
+```
+package javaTest;
+
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class LinkedHashSetTest {
+
+	public static void main(String[] args) {
+		  Set<String> set = new LinkedHashSet<String>();
+	      
+	      set.add("a");
+	      set.add("z");
+	      set.add("c");
+	      set.add("b");
+	      set.add("c"); //중복
+	      set.add("p");
+	      set.add("a"); //중복
+	      set.add("d");
+	      set.add("a"); //중복
+	      
+	      //Iterator 생성 방법 (*한번 생성 후 재사용 할경우 재생성 필수)
+	      Iterator<String> iter = set.iterator();
+	      
+	      while(iter.hasNext()) {
+	         System.out.println(iter.next());
+	      }
+          
+          //Collectionx클래스의 sort를 쓰기위하여 Set의 객체들을 list에 담아 정렬.
+          List<String> list = new LinkedList(set);
+	      Collections.sort(list);
+	}
+}
+```
+![image](https://github.com/KATEKEITH/TIL_log/assets/46472768/3e220a7d-b0c8-43ec-846b-1d29dc9b191e)
+
+
 <br>
 
 ## Spring
