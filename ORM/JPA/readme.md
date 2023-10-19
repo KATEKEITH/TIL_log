@@ -20,6 +20,8 @@ JPA를 사용하기 위해서는 JPA를 구현한 Hibernate, EclipseLink, DataNu
 
 <br/>
 
+![image](https://github.com/KATEKEITH/TIL_log/assets/46472768/efbb9101-a5dc-4315-94bc-ebb53107d462)
+
 ```
 - save() 메소드와는 다르게 saveAndFlush() 메소드는 실행중(트랜잭션)에 즉시 data를 flush 한다.
 
