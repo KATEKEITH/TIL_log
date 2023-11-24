@@ -121,17 +121,17 @@ public class LinkedHashSetTest {
 <br>
 
 ## Infra & DevOps
+
+* Docker
+  
+  ### 컨테이너 이미지 용량 줄이기
+	![image](https://github.com/KATEKEITH/TIL_log/assets/46472768/4f6c4c48-67f3-4f47-b1e7-16fbccfa41ad)
+	https://tech.cloudmt.co.kr/2022/11/08/container-imagesize-diet/
+
+
 * AWS
 
 * CI/CD
-
-* NginX
-
-* Pinpoint
-
-* 성능 테스트
-
-* 카프카
 
 
 <br>
