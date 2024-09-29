@@ -1,1 +1,8 @@
+# Servlet API
 
+- Servlet API는 자바 기반 웹 애플리케이션에서 HTTP 요청과 응답을 처리하기 위한 규약(인터페이스와 클래스)의 모음입니다.
+- **서블릿(Servlet)**이 HTTP 요청을 처리할 수 있도록 도와주는 표준 인터페이스로, 자바에서 웹 서버나 애플리케이션 서버와 상호 작용할 때 사용됩니다.
+- 주로 Tomcat, Jetty, Undertow 같은 서블릿 컨테이너에서 동작하며, 이 컨테이너들은 Servlet API를 사용해 웹 애플리케이션의 HTTP 요청과 응답을 관리합니다.
+
+
+![image](https://user-images.githubusercontent.com/51365114/119627750-716f3100-be47-11eb-8e83-686b23c2c161.png)
